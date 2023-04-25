@@ -1,0 +1,477 @@
+/*Le da propiedad al cuerpo principal de la pagina  */
+
+body{
+   margin:0;
+   font-family: Arial, Helvetica, sans-serif;
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+   padding-bottom: 5em; /*Le da scroll a la pagina*/
+
+  
+  }
+/*Le da propiedad al Encabezado  */
+header{
+  display: flex; /*Le da flexibidad al objeto en la clase objeto en la pantaÑa*/
+  justify-content:space-between;/*Le separa los que esta arriba en el encabezado el logo y las letras*/
+  
+  background:black;/*Le da fondo al encabezado*/
+  color :white;/*color a la letra que esta en el encabezado*/
+  height:70px;/*altura en el encabezado*/
+ z-index:100 ;/*para sobreponerse sobre todo los elementos */
+ width:100%;
+}
+
+/*Le da propiedad a la clase logo donde esta el nombre de la empresa y logo  */
+.logo {
+  display: flex;
+  align-items:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px; 
+
+}
+/*Le da propiedad a la imagen del logo de la empresa  */
+
+.logo img {
+  height:50px;
+  margin-left:30px;
+  
+}
+
+/*Le da propiedad a la clase menu a los elementos ul a los elemento generales del menu */
+
+#menu ul{
+  list-style: none;/*Le dice los elemento de lista que no muestre el estilo de la listas */
+  margin:0;
+  padding:0;
+  
+} 
+
+/*Le da propiedad a la clase menu a los elementos ul #item al primer nivel del menus especificamente */
+
+#menu ul #item { 
+   
+  list-style: none;/*Le dice los elemento de lista que no muestre el estilo de la listas */
+  margin:0;
+  float:left;/*Le dice los elemento que floten  a la horizontal */
+  padding: 12px 8px;
+  
+  
+  
+} 
+/*Le da propiedad a la clase menu a los elementos ul #item al segunndo nivel del menus especificamente */
+#menu ul #item a{
+       
+     color:white;
+     padding:12px 22px;
+     display:block; /*hace que el comportamiento del elemento sea como un bloque.*/
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration:none;
+     font-size: 16px; 
+     margin-top: 10px; 
+     border:2px solid rgb(246, 246, 250);
+     border-radius: 30px;  
+     
+   
+} 
+ 
+
+/*Le da propieda a los elementos que estan en el menu desplegable */
+
+#menu #desple{
+  display:none;/*hace quese oculte las opciones que estan en el menu desplegable*/
+  position: absolute;
+  
+} 
+/*Le da sombra o efecto a las opciones de menu primer nivel*/
+
+#menu #item:hover #desple{
+  display:block;
+  background-color:transparent; 
+
+
+
+}  
+
+ /*Le da sombra a lo que estan en el menu segundo nivel */
+#menu #item a:hover{
+ 
+  color :aqua;
+  background-color:blueviolet;
+  border-radius: 30px;  
+
+}  
+
+
+ /*esta clase contiene el contenido en el centro la pagina imaginas y titulos en general */
+.contenedor {
+    
+  display:flex; 
+  justify-content:center;
+  margin-top: 80px;/* establece el margen superior de un elemento especificando una longitud o un porcentaje*/
+  color:white; 
+  font-family: Arial, Helvetica, sans-serif;
+   align-items: center;/*La alineacion de un elemento dentro de un bloque*/
+
+} 
+
+
+/*Da propiedad al texto Information Technologies Services*/
+.contenedor h1{
+  display:flex;
+  font-size: 26px;
+  width:50%;
+  margin:auto;
+  margin-bottom:40px;
+  justify-content:center;
+  } 
+ 
+   /*Da propiedad al parrafo que esta de de bajo de lah1*/
+   .contenedor p{ 
+        font-size: 15px;
+        line-height:20px;
+        width: 60%;
+        margin: auto;
+        text-align:justify;
+      
+     
+    } 
+
+   /*Da propiedad al boton que esta debajo del parrafo*/
+
+    .contenedor a {  
+       color:white;
+       font-size: 16px;
+       text-decoration:none;
+       border-radius: 30px;  
+       background-color: blueviolet;
+       font-weight:bold;  
+       display: inline-block; 
+       margin-top:30px; 
+       margin-left: 280px;
+       justify-content:center;
+       padding:20px 50px;
+       position: absolute;
+       
+      } 
+
+
+    
+      
+   
+/* mueve a la derecha la imagen que esta dentro del contenedor */
+.figura2{ 
+    margin-right: 100px;
+   
+} 
+   
+/*Le da sombra o efecto al boton  que esta debajo del parrafo*/
+.contenedor a:hover{ 
+background-color:transparent;
+border:2px solid rgb(68, 68, 164);
+color:aqua;
+
+}  
+
+
+
+.titulo-contenidos { 
+  
+  font-family: sans-serif;
+  font-weight:1000;
+  font-size:27px;
+  color:white;
+  background: linear-gradient(90deg, rgb(232, 229, 232) 0%, rgb(9, 46, 121) 35%, rgb(230, 229, 241) 100%);
+  text-align:center;
+  height: 20vh;
+  margin-top: 180px;
+  padding:30px  30px;
+  
+}  
+
+
+
+
+
+.contenidos{ 
+  display:flex;
+  
+  background: linear-gradient(90deg, rgb(232, 229, 232) 0%, rgb(9, 46, 121) 35%, rgb(230, 229, 241) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align:center ;
+  height: 100vh;
+  padding:40px  30px;
+  margin:auto;
+  
+
+}   
+
+
+.contenidos .servicio{ 
+ 
+  height: 220px;
+  width:270px;
+   background:darkblue;
+   border-radius: 15px;
+   padding: 10px 10px;
+   margin:20px;
+   text-align:center;
+   box-shadow:0 5px 5px rgba(0,0,0,.3);
+
+
+
+}   
+
+.servicio h3 { 
+  color:white;
+  text-align:center ;
+  font-weight: 900;
+  padding:5px;
+}  
+.servicio p { 
+  color:white;
+  font-size:bold;
+  display: flex;
+  text-align: justify;
+ 
+ 
+
+}  
+
+.servicio a{ 
+  color:white;
+  font-size: 16px;
+  text-decoration:none;
+  border-radius: 30px;  
+  background-color: blueviolet;
+  font-weight:bold;  
+  display: inline-block; 
+  margin-top:20px; 
+  
+  justify-content:center;
+  padding:10px 30px;
+
+}  
+
+.servicio a:hover{ 
+  background-color:transparent;
+  border:2px solid rgb(68, 68, 164);
+  color:white;
+  
+  }  
+  
+  #contenido2 { 
+    display: flex;
+    height: 70vh;
+    background: linear-gradient(90deg, rgb(243, 243, 246) 0%, rgb(4, 75, 218) 35%, rgb(249, 248, 255) 100%);
+  }   
+
+
+  #contenido2 .fototec{ 
+    margin-top: 40px; 
+    margin-left: 150px;
+    
+    
+  
+     
+  }   
+
+  #contenido2 .titutec{ 
+      display: block;
+      color:aliceblue;
+      font-weight: 600px;
+      font-size: bold;
+       padding:50px 30px ;  
+       margin-top:90px ; 
+       justify-content: center; 
+       align-items: center;
+       text-align: center;
+  }   
+  
+    
+    
+  
+
+  
+#contenido2 a{ 
+      color:white;
+      
+      font-size: 16px;
+      text-decoration:none;
+      border-radius: 30px;  
+      background-color: blueviolet;
+      font-weight:bold;  
+      padding:10px 30px;
+      
+      
+    }  
+    
+    #contenido2 a:hover{ 
+      
+      background-color:transparent;
+      border:2px solid rgb(68, 68, 164);
+      color:white;
+
+     
+  
+    }  
+
+    footer{ 
+         
+       width:100%;
+       padding: 50px 0px;
+
+      height:100%;
+     
+   }  
+   
+  .contenido-footer  { 
+   
+   display:flex; 
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width:1200px;
+   margin:auto;
+   margin-top:60px;
+
+  }  
+
+
+  .box-footer { 
+   display:flex;
+    flex-direction:column;
+    padding:40px;
+  } 
+ 
+  .box-footer .logotipo img { 
+     width:180px;
+  } 
+
+  .box-footer .termino{ 
+    max-width:350px; 
+    margin-top: 20px;
+    font-weight:500px;
+    color:white;
+    font-size: 14px;
+    margin:auto;
+    text-align:justify;
+
+  } 
+
+  .box-footer h2{ 
+    margin-bottom:30px;
+    color:white;
+    font-weight:600;
+    font-size: 20px;
+
+  } 
+   
+  .box-footer a{ 
+    margin-top:10px;
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+   
+    
+  } 
+
+
+  .box-footer a:hover{ 
+    opacity:0.8;
+    color:rgb(210, 47, 255);
+
+
+  } 
+
+  
+
+  .box-footer a .fab{ 
+    opacity:0.8;
+    font-size:20px;
+    color:rgb(210, 47, 255);
+
+
+  } 
+
+  .copy-rigth{ 
+    max-height:1200px;
+    margin:auto;
+    text-align: center;
+    margin-top:150px;
+    padding : 0px 40px;
+   
+  
+  } 
+  .copy-rigth p{ 
+     color:white;
+    margin-top:60px;
+
+  } 
+
+  .copy-rigth hr{ 
+    border:none;
+    height:1px;
+    background-color:white;
+     margin-top:30px;
+ 
+  } 
+/*Le es la media query para dar responsive el menu para que se pueda ver bien en otros menu*/
+    @media (max-width: 700px) {
+    
+    
+       header{
+        flex-direction: column;
+     
+     
+      } 
+      .contenedor {
+        flex-direction: column;
+        margin-top:265px;
+        
+       } 
+       
+       .figura1 a {
+        flex-direction: column;
+        margin-left: 100px;
+        
+       } 
+      
+      .contenedor .figura2{
+        flex-direction: column;
+        margin-top:140px;
+        margin-left:140px;
+        
+        
+    } 
+       
+      .figura2{
+
+        height:50%;
+  
+      } 
+
+     #contenido2{ 
+      
+        
+      display:flex;
+      flex-direction:column;
+      padding:590px  0px;
+      
+      
+    } 
+   
+    #contenido2 .fototec{ 
+
+    margin-left: 70px;
+      
+        
+      
+      
+      
+   } 
+  
+} 
+    
+    
+    
+
+
