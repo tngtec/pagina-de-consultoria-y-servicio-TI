@@ -1,115 +1,119 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento: HTML5 -->
 <html lang="en">
+<!-- Define el idioma principal de la página: “en” (inglés) -->
 <head>
     <meta charset="UTF-8">
+     <!-- Codificación de caracteres: UTF-8 para soportar caracteres internacionales -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Garantiza que Internet Explorer use el motor de renderizado más moderno -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta la escala y dimensiones para dispositivos móviles (responsive) -->
     <script src="https://kit.fontawesome.com/6bd7e740b2.js" crossorigin="anonymous"></script>
+    <!-- Inyecta los iconos de Font Awesome desde su CDN -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Enlaza la hoja de estilos principal -->
     <title>TNG Tecnology:IT Services</title>
+    <!-- Texto que aparece en la pestaña del navegador -->
     <link rel="shourtcout icon" href="imagenes/It.jpg">
-
+    <!-- Favicon: icono que aparece junto al título en la pestaña -->
 </head>
 <body>
+ <!--Aquí comienza el contenido visible de la página -->
+
+
+
+<header>
+  <div class="logo">
+    <img src="imagenes/it.jpg" alt="LOGO DE LA EMPRESA"> 
+    <h2 class="nombre-empresa">TNG TECNOLOGIES: IT SERVICES</h2>
+  </div>
+
+
+
+<div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')"></div>
+<nav>
+  
+    <ul>
+      <li><a href="#">BEGINNING</a>
+        <ul class="submenu">
+          <li><a href="#">vision</a></li>
+          <li><a href="#">mision</a></li>
+          <li><a href="#">origen</a></li>
+          <li><a href="#">ubicacion</a></li>
+        </ul>
+      </li>
     
-  <header>
-            <div class ="logo">
-               <img src="imagenes/it.jpg" alt="LOGO DE LA EMPRESA"> 
-                <h2 class="nombre de empresa">TNG TECNOLOGIES: IT SERVICES</h2>
-             </div>
-           <nav>
-              <ul>
-                     
-          </nav> 
-           
-
-          <div id="menu">
-
-            <ul>
-                  <li id="item"><a href="#">BEGINNING</a>
-                    <ul id="desple" >
-                      <li> <a href="#">vision</a></li>
-                      <li> <a href="#"> mision</a></li>
-                      <li> <a href="#"> origen </a></li>
-                      <li> <a href="#"> ubicacion</a></li>
-  
-                     </ul>
-                  
-                  
-                  
-                  </li>
-
-                  <li id="item"><a href="#">ABOUT US</a>
-                    <ul id="desple" >
-                      <li> <a href="#">html</a></li>
-                      <li> <a href="#"> css </a></li>
-                      <li> <a href="#"> javascript </a></li>
-                      <li> <a href="#"> dreamweaver</a></li>
-  
-                     </ul>
-                  </li>
-  
-                  <li id="item"><a href="#">CONTACT Us</a>
-                   
-                     <ul id="desple" >
-                      <li> <a href="#">.net</a></li>
-                      <li> <a href="#"> Visual Basic </a></li>
-                      <li> <a href="#"> pascal</a></li>
-                      <li> <a href="#"> delhi</a></li>
-  
-                     </ul>
-                  
-                  
-                  </li>
-                  <li id="item"><a href="#">SERVICES</a>
-                    <ul id="desple" >
-                      <li> <a href="https://www.freecodecamp.org/news/what-is-front-end-development/">DVP FRONT END</a></li>
-                      <li> <a href=" https://codeinstitute.net/global/blog/what-is-back-end-development/">DVP BACK END </a></li>
-                      <li> <a href=" https://it-s.com/what-is-database-development/">DB BASE DE DATOS </a></li>
-                      <li> <a href=" https://www.redhat.com/en/topics/cloud-computing/what-are-cloud-services"> CLOUD SERVICES</a></li>
-  
-                     </ul>
-                  
-                  
-                  </li>
-                  <li id="item"><a href="#">PRODUCTS</a>
-                    <ul id="desple" >
-                      <li> <a href="#">INTENERT</a></li>
-                      <li> <a href="#"> TV POR CABLE</a></li>
-                      <li> <a href="#"> LAPTOS</a></li>
-                      <li> <a href="#"> SERVIDORES</a></li>
-  
-                     </ul>
-                  
-                  
-                  
-                  
-                  </li>
-              
-                  
-            </ul>
-  
-        </div>
-
-  </header>    
-
-                 
-    <div class="contenedor" >
-      <div class="figura1">
+      <li><a href="#">ABOUT US</a>
+      <ul class="submenu">
+        <li><a href="#">html</a></li>
+        <li><a href="#">css</a></li>
+        <li><a href="#">javascript</a></li>
+        <li><a href="#">dreamweaver</a></li>
+      </ul>
+    </li>
        
-       <h1> <span class="creative" >Information Technologies Services </span> </h1>
-         <P>IT services are professional services that are designed to promote and stimulate the use of technology by businesses and end-users. 
-          In the digital age, organizations are using technology services to build and develop specialized technology-based solutions by incorporating processes for software, hardware, telecommunications networks, and electronics.  </P>
-          
-           
+    <li><a href="#">CONTACT US</a>
+      <ul class="submenu">
+        <li><a href="#">.net</a></li>
+        <li><a href="#">Visual Basic</a></li>
+        <li><a href="#">pascal</a></li>
+        <li><a href="#">delphi</a></li>
+      </ul>
+    </li>
       
+      <li><a href="#">SERVICES</a>
+      <ul class="submenu">
+        <li><a href="https://www.freecodecamp.org/news/what-is-front-end-development/">DVP FRONT END</a></li>
+        <li><a href="https://codeinstitute.net/global/blog/what-is-back-end-development/">DVP BACK END</a></li>
+        <li><a href="https://it-s.com/what-is-database-development/">DB BASE DE DATOS</a></li>
+        <li><a href="https://www.redhat.com/en/topics/cloud-computing/what-are-cloud-services">CLOUD SERVICES</a></li>
+      </ul>
+    </li>
+    <li><a href="#">PRODUCTS</a>
+    <ul class="submenu">
+        <li><a href="#">INTERNET</a></li>
+        <li><a href="#">TV POR CABLE</a></li>
+        <li><a href="#">LAPTOPS</a></li>
+        <li><a href="#">SERVIDORES</a></li>
+      </ul>
+     </li>
+
+
+    </ul>
+  
+</nav>
+
+</header>
+
+
+
+
+   
+   
+      
+
+   <!-- Este código crea un bloque en dos partes: un texto principal con llamada a la acción y una imagen ilustrativa. Suele usarse en landing pages para describir un servicio o producto junto a su visual.-->     
+   
+ 
+    <div class="contenedor" >
+      <!-- Agrupa ambos bloques y, en CSS, se suele usar display: flex o grid para colocarlos uno al lado del otro.-->
+      <div class="figura1">
+       <!---- Bloque de texto (.figura1)-->
+       <h1> <span class="creative" >Information Technologies Services </span> </h1>
+         <!--- Título principal La clase creative permite aplicar un estilo especial (color, animación, tipografía).-->
+        <P>IT services are professional services that are designed to promote and stimulate the use of technology by businesses and end-users. 
+          In the digital age, organizations are using technology services to build and develop specialized technology-based solutions by incorporating processes for software, hardware, telecommunications networks, and electronics.  </P>
+          <!--- Párrafo descriptivo con información sobre IT services.--->
           <a class="btn" href="https://www.walkme.com/glossary/information-technology-services/" target ="_blank">READ MORE</a>
-     
+          <!---- Enlace con apariencia de botón. Abre la URL en una pestaña nueva gracias a target="_blank".-->
       </div>
    
-        <div class="figura2"> 
+      <div class="figura2"> 
+       <!---- Bloque de imagen(.figura2)--> 
         <img src="imagenes/it.jpg"width="358" height="342"  />
-        </div> 
+        <!-- Imagen representativa. width y height definen sus dimensiones, y alt describe la imagen para accesibilidad.-->
+      </div> 
 
     </div>
      
@@ -162,12 +166,19 @@
          
   <div class="fototec">   
   <img src="imagenes/IMG-2022.jpg"width="260" height="280"  />
+
   </div> 
         
     <div class="titutec">
     <h1> <span >Are you ready to use information technology? </span> </h1>
     <a class="btn" href="  https://www.walkme.com/glossary/information-technology-services/" target ="_blank">READ MORE</a>
     </div>
+
+  <div class="foto">   
+     <img src="imagenes/backend.jpg"width="260" height="280"  />
+  </div> 
+
+
 </section>
 
    <footer>   
@@ -236,6 +247,12 @@
 
          
    </footer>
+
+
+
+
+
+
 
 
 
